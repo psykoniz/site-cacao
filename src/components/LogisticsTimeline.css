@@ -1,0 +1,86 @@
+.logistics-component {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logistics-timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.log-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.log-circle {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-cocoa);
+    color: var(--color-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.log-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.log-connector {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(75, 46, 31, 0.2);
+    z-index: 1;
+}
+
+.logistics-info {
+    background-color: var(--color-light);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.logistics-info strong {
+    color: var(--color-cocoa);
+}
+
+@media (max-width: 600px) {
+    .logistics-timeline {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .log-step {
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .log-connector {
+        top: 40px;
+        left: 20px;
+        width: 2px;
+        height: 100%;
+    }
+}

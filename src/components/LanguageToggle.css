@@ -1,0 +1,33 @@
+.language-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--color-muted);
+    color: var(--color-cocoa);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.language-toggle:hover {
+    background: var(--color-light);
+    border-color: var(--color-cocoa);
+}
+
+.lang-code {
+    text-transform: uppercase;
+}
+
+/* Dark version for white backgrounds if needed */
+.language-toggle.dark {
+    color: var(--color-text-primary);
+    border-color: var(--color-border);
+}
+
+.language-toggle.dark:hover {
+    background: var(--color-bg-light);
+}

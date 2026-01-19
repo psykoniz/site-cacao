@@ -1,0 +1,154 @@
+.logistics-hero {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.logistics-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.logistics-hero p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Improved Section Cards */
+.logistics-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.logistics-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logistics-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.logistics-card-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.logistics-card-content {
+    padding: 2rem;
+}
+
+.logistics-card h3 {
+    font-size: 1.5rem;
+    color: var(--color-cocoa);
+    margin-bottom: 1rem;
+}
+
+.logistics-card p {
+    color: var(--color-muted);
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+.logistics-card .check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logistics-card .check-list li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.logistics-card .check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-gold);
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logistics-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .logistics-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .logistics-hero p {
+        font-size: 1.2rem;
+    }
+
+    .logistics-card-image {
+        height: 220px;
+    }
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--color-cocoa) 0%, #3a2518 100%);
+    padding: 5rem 0;
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.cta-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-section .btn-primary {
+    background: var(--color-gold);
+    color: var(--color-cocoa);
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.cta-section .btn-primary:hover {
+    background: #e8c68a;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .cta-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+}

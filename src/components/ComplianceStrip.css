@@ -1,0 +1,52 @@
+.compliance-strip {
+    background-color: var(--color-cocoa);
+    border-bottom: 2px solid var(--color-gold);
+    padding: 1.5rem 0;
+    color: var(--color-light);
+}
+
+.compliance-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.compliance-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.compliance-icon {
+    color: var(--color-gold);
+    display: flex;
+    align-items: center;
+}
+
+.compliance-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.compliance-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-white);
+}
+
+.compliance-sub {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+    .compliance-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

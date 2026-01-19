@@ -1,0 +1,67 @@
+.key-figures-section {
+    background-color: var(--color-white);
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.figures-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.figure-card {
+    background-color: var(--color-light);
+    padding: 2rem;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.figure-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card);
+    border-color: var(--color-gold);
+}
+
+.figure-icon {
+    color: var(--color-green);
+    background-color: rgba(31, 77, 58, 0.1);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.figure-value {
+    font-size: 2rem;
+    color: var(--color-cocoa);
+    margin-bottom: 0.25rem;
+}
+
+.figure-label {
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.figure-desc {
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
+@media (min-width: 640px) {
+    .figures-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .figures-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

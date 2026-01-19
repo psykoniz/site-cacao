@@ -1,0 +1,41 @@
+.specs-table-wrapper {
+    border: 1px solid #eee;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table th,
+.specs-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.specs-table th {
+    background-color: #fcfcfc;
+    color: var(--color-cocoa);
+    font-weight: 600;
+    width: 40%;
+}
+
+.specs-table tr:last-child th,
+.specs-table tr:last-child td {
+    border-bottom: none;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}

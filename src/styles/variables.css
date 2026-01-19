@@ -1,0 +1,24 @@
+:root {
+  /* Brand Palette - Institutional Premium */
+  --color-cocoa: #4B2E1F;    /* Deep Brown - Quality, Material */
+  --color-green: #1F4D3A;    /* Forest Green - Agriculture, Cameroon */
+  --color-gold: #C9A24D;     /* Subtle Gold - Value, Export */
+  --color-light: #F7F6F2;    /* Off-white - Readablity, Serious */
+  --color-white: #FFFFFF;
+  
+  /* Text Colors */
+  --color-text: #111111;
+  --color-muted: #555555;
+  --color-light-text: #F7F6F2;
+
+  /* UI Tokens */
+  --container-max: 1120px;
+  --header-height: 80px;
+  --radius: 14px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  /* Transitions */
+  --transition: all 0.3s ease;
+}
