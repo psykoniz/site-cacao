@@ -36,11 +36,11 @@ const Contact = () => {
                             </div>
                             <div className="contact-item">
                                 <Mail className="text-gold" />
-                                <span>contact@bme-cocoa.cm</span>
+                                <span>gaetan.farrugia@outlook.com</span>
                             </div>
                             <div className="contact-item">
                                 <Phone className="text-gold" />
-                                <span>+237 600 000 000</span>
+                                <span>+41 78 906 32 26</span>
                             </div>
                         </div>
 

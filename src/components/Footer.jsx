@@ -45,8 +45,8 @@ const Footer = () => {
                     <h4>{t('footer.contact')}</h4>
                     <address>
                         {t('contact.address')}<br />
-                        <a href="mailto:trade@bmecocoa.com">trade@bmecocoa.com</a><br />
-                        <a href="tel:+237600000000">+237 6 00 00 00 00</a>
+                        <a href="mailto:gaetan.farrugia@outlook.com">gaetan.farrugia@outlook.com</a><br />
+                        <a href="tel:+41789063226">+41 78 906 32 26</a>
                     </address>
                 </div>
             </div>
